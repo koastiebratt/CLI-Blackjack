@@ -12,7 +12,7 @@ public class Hit {
 			//Deck Starting point after dealing
 			int j = 4;
 			
-			char userChoice = (Menu.Print_Menu()).charAt(0);
+			char userChoice = (Menu.Print_Menu());
 			
 			while(userChoice == 'h' || userChoice =='H') {
 				
@@ -27,15 +27,12 @@ public class Hit {
 					if (!Winner.checkWinner(playerScore, dealerScore, auto_lost)) {
 						
 						j++;
-						
-					userChoice = (Menu.Print_Menu()).charAt(0);}
+						userChoice = (Menu.Print_Menu());
+					}
 					
-				} else userChoice = 's';
-		//			if (checkWinner(playerScore, dealerScore)) {
-		//				WannaPlay = Continue();
-		//			} else {
-		//				break;
-		//			}
+				}else { 
+					userChoice = 's';
+				}
 			}
 		}
 	}
