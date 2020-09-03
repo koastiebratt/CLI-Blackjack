@@ -22,5 +22,20 @@ public class NewDeck {
 		
 		return deck;
 	}
+	
+	//Get Player Hand
+	public static String playersHand(int Deck[], int CardIndex) {
+		
+		return null;
+		
+	}
+	
+	//Get Dealer Hand
+	public static String dealersHand(int Deck[], int CardIndex) {
+			
+			return null;
+			
+	}
+	
 
 }
