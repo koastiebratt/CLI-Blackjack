@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Menu {
 	
+	
 	public static char Print_Menu() {
 		
 		Scanner input = new Scanner(System.in);
@@ -37,6 +38,14 @@ public class Menu {
 		
 		input.close();
 		return user_Choice;
+	}
+	
+	public static String GameMenu () {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Welcome to BJ");
+		System.out.println("Enter y to contine or n to exit : ");
+		return String.valueOf(input.next().charAt(0));
+		
 	}
 }
 
