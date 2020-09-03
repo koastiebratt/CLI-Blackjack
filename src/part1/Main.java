@@ -4,8 +4,14 @@ public class Main {
 
 	public static void main(String[] args) {
 		//Gameplay Logic goes here
-		boolean userInput = true;
-		
+		String userInput = "";
+		do {
+			userInput = Menu.GameMenu();
+			if (userInput == "Y") {
+				userInput = "";
+				
+			}
+		} while (userInput == "Y");
 		
 		
 	}
