@@ -2,7 +2,7 @@ package part1;
 
 public class Split {
 	
-	public static int Split(int player_Score, int deck[], int num_Hands, int player_hand[][], int card_index) {
+	public static int[] Split(int player_Score, int deck[], int num_Hands, int player_hand[][], int card_index) {
 		
 		int temp_player_hand[][] = player_hand;
 		
@@ -46,5 +46,7 @@ public class Split {
 				}
 			}
 		}
+		
+		return player_Scores;
 	}
 }

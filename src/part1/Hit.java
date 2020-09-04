@@ -4,36 +4,14 @@ import java.util.Scanner;
 
 public class Hit {
 
-	public static void hit(int playerScore, int dealerScore, boolean auto_lost, int[] new_deck) {
+	public static int hit(int playerScore, int[] deck, int card_index) {
 		
-	
-		if (!Winner.checkWinner(playerScore, dealerScore, auto_lost)) {
-			
-			//Deck Starting point after dealing
-			int j = 4;
-			
-			char userChoice = (Menu.Print_Menu());
-			
-			while(userChoice == 'h' || userChoice =='H') {
-				
-				playerScore += Score.getScore(new_deck[j]);
-				
-				if (!Winner.checkWinner(playerScore, dealerScore, auto_lost)) {
-					
-					j++;
-					
-					dealerScore += Score.getScore(new_deck[j]);
-					
-					if (!Winner.checkWinner(playerScore, dealerScore, auto_lost)) {
-						
-						j++;
-						userChoice = (Menu.Print_Menu());
-					}
-					
-				}else { 
-					userChoice = 's';
-				}
-			}
-		}
+		int[] temp_deck = deck;
+		int temp_index = card_index;
+		int temp_Score = playerScore;
+		
+		temp_Score += temp_deck[temp_index +1];
+		
+		return temp_Score;
 	}
 }

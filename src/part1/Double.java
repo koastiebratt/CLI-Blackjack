@@ -9,11 +9,16 @@ public class Double {
 	public static int DoubldeDown(int Deck[], int playerHand[], int playerScore, int cardIndex) {
 		
 		int[] temp_deck = Deck;
-		int[] temp_player = playerHand;
+		int[] temp_player = new int[playerHand.length];
 		int temp_player_Score = playerScore;
 		int index = cardIndex;
 		
-		playerHand[3] = temp_deck[cardIndex];
+		for(int k = 0; k < temp_player.length ; k++) {
+			int temp_val = playerHand[k];
+			temp_player[k] = temp_val;
+		}
+		
+		playerHand[2] = temp_deck[cardIndex];
 		
 		for(int i = 0; i < 3; i++) {
 			
