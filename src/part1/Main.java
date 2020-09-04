@@ -3,29 +3,37 @@ package part1;
 public class Main {
 
 	public static void main(String[] args) {
-		//Gameplay Logic goes here
-		String userInput = "";
+		char userInput = 'Y';
 		
+		//When do runs, everything is reset
 		do {
+			int deck[] = NewDeck.NewDeck();
+			//Player gets Max 4 splits
+			int[][][][] playerHand = new int[11][11][11][11];
+			//Dealer gets one hand
+			int[] dealerHand = new int[11];
+			int playerScore = 21;
+			int dealerScore = 0;
+			int cardIndex = 0;
 			
-			int playerScore = 0;
+			/**
+			 * Create User and Dealer starting hand here
+			 */
+			
 			
 			do {
 				
-			
-			userInput = Menu.GameMenu();
-			if (userInput == "Y") {
-				userInput = "";
-				
-				}
+		
 			
 			//Run players Turn while under
 			}while(playerScore < 21);
 		
-		//While Player wants to play
-		} while (userInput == "Y");
+			//Will return a value to userInput. If it returns N it will exit
+			userInput = Menu.GameMenu();
+		} while (userInput == 'Y' || userInput == 'y');
 		
-		
+		System.out.println();
+		System.out.println("Thanks for playing!!!");
 	}
 
 }

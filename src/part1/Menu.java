@@ -40,11 +40,10 @@ public class Menu {
 		return user_Choice;
 	}
 	
-	public static String GameMenu () {
+	public static char GameMenu () {
 		Scanner input = new Scanner(System.in);
-		System.out.println("Welcome to BJ");
-		System.out.println("Enter y to contine or n to exit : ");
-		return String.valueOf(input.next().charAt(0));
+		System.out.print("Enter y to contine or n to exit : ");
+		return input.next().charAt(0);
 		
 	}
 }
