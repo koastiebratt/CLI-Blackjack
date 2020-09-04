@@ -3,7 +3,7 @@ package part1;
 public class NewDeck {
 	
 	public static int[] NewDeck() {
-		
+	
 		//Creates new array of 52 cards
 		int[] deck = new int[52];
 		
