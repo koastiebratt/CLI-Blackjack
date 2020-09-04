@@ -7,6 +7,7 @@ public class Main {
 		
 		//When do runs, everything is reset
 		do {
+			int player_Number_Of_Hands = 1;
 			int deck[] = NewDeck.NewDeck();
 			//Player gets Max 4 splits
 			int[][][][] playerHand = new int[11][11][11][11];
@@ -14,20 +15,20 @@ public class Main {
 			int[] dealerHand = new int[11];
 			int playerScore = 21;
 			int dealerScore = 0;
-			int cardIndex = 0;
+			int cardIndex = 4;
 			
 			/**
 			 * Create User and Dealer starting hand here
 			 */
-			
-			
 			do {
 				
 		
 			
+				
 			//Run players Turn while under
 			}while(playerScore < 21);
 		
+			
 			//Will return a value to userInput. If it returns N it will exit
 			userInput = Menu.GameMenu();
 		} while (userInput == 'Y' || userInput == 'y');

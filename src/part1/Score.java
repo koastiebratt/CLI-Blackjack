@@ -29,6 +29,4 @@ public class Score {
         return result;
 		
 	}
-	
-	//Create black jack check method after first two cards are dealt for dealer. this boolean will be used for auto_lost check in winner.
 }
