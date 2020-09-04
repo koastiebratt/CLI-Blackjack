@@ -18,6 +18,7 @@ public class Double {
 		for(int i = 0; i < 3; i++) {
 			
 			temp_player_Score += Score.getScore(temp_player[i]);
+			
 		}
 		
 		return temp_player_Score;

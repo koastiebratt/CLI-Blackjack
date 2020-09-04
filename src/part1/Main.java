@@ -7,6 +7,7 @@ public class Main {
 		
 		//When do runs, everything is reset
 		do {
+			int player_Number_Of_Hands = 1;
 			int deck[] = NewDeck.NewDeck();
 			//Player gets Max 4 splits
 			int[][][][] playerHand = new int[11][11][11][11];
