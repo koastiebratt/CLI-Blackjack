@@ -39,13 +39,6 @@ public class Menu {
 		input.close();
 		return user_Choice;
 	}
-	
-	public static char GameMenu () {
-		Scanner input = new Scanner(System.in);
-		System.out.print("Enter y to contine or n to exit : ");
-		return input.next().charAt(0);
-		
-	}
 }
 
 
